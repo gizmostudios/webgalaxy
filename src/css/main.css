@@ -1,0 +1,7 @@
+@import 'reset.css';
+
+body {
+  font-family: 'Courier New';
+  background: black;
+  color: white;
+}
