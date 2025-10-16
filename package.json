@@ -8,15 +8,17 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "watch:js": "rollup -c --watch",
     "watch:pug": "pug -w src/index.pug -o ./public",
     "watch:css": "postcss -w src/css/**/*.css --base src/css --dir public/css",
     "livereload": "livereload public",
     "serve": "http-server public",
-    "dev": "yarn watch:pug & yarn watch:css & yarn livereload & yarn serve"
+    "dev": "yarn watch:js & yarn watch:pug & yarn watch:css & yarn livereload & yarn serve"
   },
   "dependencies": {
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "rollup": "^4.52.4"
   }
 }

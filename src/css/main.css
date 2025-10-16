@@ -4,4 +4,7 @@ body {
   font-family: 'Courier New';
   background: black;
   color: white;
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
 }
