@@ -7,7 +7,16 @@
   "author": "GizmoStudios",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "watch:pug": "pug -w src/index.pug -o ./public",
+    "watch:css": "postcss -w src/css/bundle.css -o public/main.css",
+    "livereload": "livereload public",
+    "serve": "http-server public",
+    "dev": "yarn watch:pug & yarn watch:css & yarn livereload & yarn serve"
+  },
   "dependencies": {
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
