@@ -1,0 +1,10 @@
+{
+  "name": "WebGalaxy",
+  "version": "1.0.0",
+  "description": "Orbital Nightsky Editor",
+  "main": "index.js",
+  "repository": "https://github.com/gizmostudios/webgalaxy",
+  "author": "GizmoStudios",
+  "license": "MIT License",
+  "private": false
+}
