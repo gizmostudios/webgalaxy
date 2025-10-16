@@ -1,0 +1,26 @@
+.elem {
+  --a: 0;
+  --o: 0;
+  --w: 10rem;
+  --h: 7.5rem;
+  --t: 2s;
+
+  position: absolute;
+  width: var(--w);
+  aspect-ratio: 1;
+
+  rotate: calc(var(--a) * 30deg);
+  transition: rotate var(--t) ease-in-out;
+
+  & .elem__inner {
+    transition: translate var(--t) ease-in-out;
+    translate: 0 calc(var(--o) * var(--h));
+  }
+
+  .dummy {
+    width: 100%;
+    aspect-ratio: 4/3;
+    /* aspect-ratio: 16/9; */
+    background: red;
+  }
+}

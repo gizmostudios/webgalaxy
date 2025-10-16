@@ -1,12 +1,34 @@
+- const segments = 12
+- const orbits = 6
+- let cSegment = 0
+- let cOrbit = 0
+
 doctype html
 html(lang="en")
   head
+    title WebGalaxy
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    title HTML5 Boilerplate
     link(rel="stylesheet", href="css/main.css")
   body
-    main
-      p This will rip open your consiousness
+    main#main
+      .elem.e0(style=`--index: -1`)
+        .elem__inner
+          video#video(autoplay muted)
+    aside
+      button#btnCopy COPY 2
+      .minimap#minimap
+        while cSegment < segments && cOrbit < orbits
+          .elem(class=`e${cSegment}` style=`--index: cSegment; --a: ${cSegment}; --o: ${cOrbit}`)
+            .elem__inner
+              .dummy.dummy--target
+                span=cSegment++
+                span=cOrbit++
+
+        .elem.e0(style=`--index: -1`)
+          .elem__inner
+            .dummy.dummy--video
+      
+    //- script(src="js/utils.js")
     script(src="js/main.js")

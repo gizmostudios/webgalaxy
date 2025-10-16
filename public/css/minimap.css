@@ -1,0 +1,11 @@
+.minimap {
+  transform-origin: top left;
+  height: 100dvh;
+  scale: .3;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: black;
+  display: grid;
+  place-items: center;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jc3MvbWluaW1hcC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoibWluaW1hcC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWluaW1hcCB7XG4gIHRyYW5zZm9ybS1vcmlnaW46IHRvcCBsZWZ0O1xuICBoZWlnaHQ6IDEwMGR2aDtcbiAgc2NhbGU6IC4zO1xuICBhc3BlY3QtcmF0aW86IDE7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgYmFja2dyb3VuZDogYmxhY2s7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIHBsYWNlLWl0ZW1zOiBjZW50ZXI7XG59Il19 */

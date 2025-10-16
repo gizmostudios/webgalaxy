@@ -1,0 +1,10 @@
+.minimap {
+  transform-origin: top left;
+  height: 100dvh;
+  scale: .3;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: black;
+  display: grid;
+  place-items: center;
+}
